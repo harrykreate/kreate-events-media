@@ -196,7 +196,7 @@
 
     /* process line fills */
     gsap.fromTo('#steps', { '--fill': 0 }, { '--fill': 1, ease: 'none', scrollTrigger: { trigger: '#steps', start: 'top 80%', end: 'bottom 50%', scrub: true } });
-    gsap.from('.logos li', { y: 40, opacity: 0, scale: .9, duration: .8, ease: 'expo.out', stagger: .03, scrollTrigger: { trigger: '.logos', start: 'top 85%' } });
+    gsap.from('.logos img', { y: 40, opacity: 0, scale: .9, duration: .8, ease: 'expo.out', stagger: .03, scrollTrigger: { trigger: '.logos', start: 'top 85%' } });
     gsap.from('.stagefloor h2', { scale: 1.3, opacity: 0, ease: 'none', scrollTrigger: { trigger: '.stagefloor', start: 'top 80%', end: 'center center', scrub: true } });
     document.fonts && document.fonts.ready.then(() => ScrollTrigger.refresh());
   }
