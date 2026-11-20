@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07060f">
+<title>Kreate for Events</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@b976cba8f08b37e7f3119858a6e89b89f33b8601/site.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- doors open -->
+<div class="doors" aria-hidden="true">
+  <div class="doors-panel"></div><div class="doors-panel two"></div>
+  <div class="doors-inner"><canvas id="doorsLed" width="1120" height="260"></canvas><div class="doors-label">Doors open</div></div>
+</div>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="Kreate for Events home"><img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/kreate.svg" alt="kreate"><span>For events</span></a>
+  <nav aria-label="Main">
+    <a href="#halls">Work</a><a href="#services">Services</a><a href="#company">Clients</a><a href="/creatives">Creative dashboard</a><a class="cta" href="#desk">Let's talk ↗</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" aria-label="Make your next show stand out">
+    <div class="hero-stage">
+      <div class="wall" aria-hidden="true" id="wall"></div>
+      <canvas class="beams" id="beams" aria-hidden="true"></canvas>
+      <div class="veil" aria-hidden="true"></div>
+
+      <div class="badge-rig" aria-hidden="true">
+        <div class="strap" id="strap"></div>
+        <div class="badge" id="badge">
+          <div class="badge-clip"></div>
+          <div class="badge-card" id="badgeCard">
+            <div class="badge-hole"></div>
+            <img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/kreate.svg" alt="">
+            <div class="badge-kind">All access</div>
+            <div class="badge-name">Your next show</div>
+            <div class="badge-role">Creative crew · Kreate for Events</div>
+            <div class="badge-code"><span>Hall K · Stand 01</span><i></i></div>
+          </div>
+          <div class="badge-hint">Drag the pass</div>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Creative partners for event teams</p>
+        <h1><span>Make your</span><span>next show</span><span class="grad">stand out.</span></h1>
+        <p class="lede">Campaign creative, social content and video that help your event get noticed, and give your team more room to focus.</p>
+        <div class="hero-ctas">
+          <a class="pill grad-fill" href="#desk">Talk about your event ↗</a>
+          <a class="pill ghost" href="#halls">Walk the halls ↓</a>
+        </div>
+        <p class="hero-tag">One creative package. A full campaign. Your show portfolio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HALLS -->
+  <section class="halls" id="halls" aria-label="The work">
+    <div class="halls-stage">
+      <div class="hall-sign">
+        <p class="eyebrow">The work speaks first</p>
+        <div class="hall-rail" aria-hidden="true"><i id="hallRail"></i></div>
+        <h2>Built for the show.<br><span class="grad">Made to be shared.</span></h2>
+      </div>
+      <div class="hall-track" id="hallTrack"></div>
+    </div>
+  </section>
+
+  <!-- DEPARTURES -->
+  <section class="board-wrap" aria-labelledby="boardTitle">
+    <div class="board-head">
+      <div><p class="eyebrow">Now showing</p><h2 id="boardTitle">Shows we've<br><span class="outline">created for</span></h2></div>
+      <p>Real campaign assets, from launch concepts and speaker announcements to exhibitor promotions and onsite materials.</p>
+    </div>
+    <div class="board" role="table" aria-label="Shows we have created for">
+      <div class="board-row h" role="row"><span role="columnheader">Hall</span><span role="columnheader">Show</span><span role="columnheader">City</span><span role="columnheader">Status</span></div>
+      <div id="boardRows"></div>
+    </div>
+    <p class="board-note">Scope of work varies by show and edition.</p>
+  </section>
+
+  <!-- STAGE -->
+  <section class="stagefloor" aria-label="Kreate in motion">
+    <img class="poster" src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/video/floor.jpg" alt="">
+    <video data-src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/video/floor.mp4" poster="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/video/floor.jpg" autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
+    <div class="tint" aria-hidden="true"></div>
+    <div class="copy">
+      <h2><small>Kreate in motion</small>On the floor.<br><span class="outline">On the feed.</span></h2>
+      <p>Campaigns, content and moments that bring a show to life, from Dubai to GITEX week.</p>
+    </div>
+  </section>
+
+  <!-- LED -->
+  <section class="led" aria-label="We take care of the details">
+    <div class="led-stage">
+      <canvas id="ledDots" aria-hidden="true"></canvas>
+      <div class="led-copy">
+        <h2 id="ledHeading"><span>One crew.</span><span>Every format.</span><span>Every edition.</span></h2>
+        <p>Brand consistency, platform formats, captions and speaker updates, handled, so your team can focus on the show.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="svc" id="services" aria-label="Services">
+    <div class="svc-stage">
+      <div class="svc-word" aria-hidden="true">Services</div>
+      <div>
+        <p class="eyebrow" style="position:relative;z-index:2;margin-bottom:18px">Choose where we can help</p>
+        <ol class="svc-list" id="svcList">
+          <li class="svc-item on"><div class="n">01</div><h3>A focused creative package</h3><p class="sub">Polish and consistency for your next assets.</p>
+            <ul><li>Speaker and exhibitor templates</li><li>Video edits and channel adaptations</li><li>Social assets and campaign variations</li></ul><a href="#desk">Discuss a creative package →</a></li>
+          <li class="svc-item"><div class="n">02</div><h3>Ongoing content support</h3><p class="sub">Campaign momentum from a team that knows the event calendar.</p>
+            <ul><li>Content planning and social management</li><li>Campaign creative and promo videos</li><li>Onsite content and coverage</li></ul><a href="#desk">Talk about your campaign →</a></li>
+          <li class="svc-item"><div class="n">03</div><h3>Support across your shows</h3><p class="sub">Dependable creative capacity for multiple show teams.</p>
+            <ul><li>Agreed capacity and show allocations</li><li>Consistent production and review process</li><li>Creative assets for your media team</li></ul><a href="#desk">Discuss portfolio support →</a></li>
+        </ol>
+      </div>
+      <div class="svc-visual" aria-hidden="true">
+        <div class="svc-shot on"><img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/cr/ai-everything-4.webp" alt=""><img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/cr/ai-everything-2.webp" alt=""><img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/cr/ai-everything-1.webp" alt=""></div>
+        <div class="svc-shot"><img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/cr/automechanika-2.webp" alt=""><img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/ph/gitex.webp" alt=""><img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/cr/automechanika-1.webp" alt=""></div>
+        <div class="svc-shot"><img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/cr/securika-1.webp" alt=""><img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/cr/mitt-1.webp" alt=""><img src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/cr/transrussia-1.webp" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" aria-labelledby="procTitle">
+    <p class="eyebrow">Built around your team</p>
+    <h2 id="procTitle">We take care of <span class="grad">the details.</span></h2>
+    <p>Start with one show. We plug into your team, your brand and your approval process.</p>
+    <ol class="steps" id="steps">
+      <li><div class="dot">1</div><h3>Share the priorities</h3><p>Your show, timeline, brand assets and the work you need help with.</p></li>
+      <li><div class="dot">2</div><h3>Agree a clear scope</h3><p>Deliverables, production dates and an approval process, before anything is made.</p></li>
+      <li><div class="dot">3</div><h3>Create, review, deliver</h3><p>Organised creative batches and ready-to-use assets, starting with one show.</p></li>
+    </ol>
+  </section>
+
+  <!-- LOGO WALL -->
+  <section class="company" id="company" aria-labelledby="coTitle">
+    <p class="eyebrow">In good company</p>
+    <h2 id="coTitle">Different industries.<br><span class="outline">The same attention to detail.</span></h2>
+    <div class="organisers" aria-label="Organisers we have worked with: DMG Events, Messe Frankfurt, DWTC, ADNEC and Capital Events, ITE Group">
+      <div class="organisers-track" aria-hidden="true">
+        <span>DMG Events</span><span>Messe Frankfurt</span><span>DWTC</span><span>ADNEC · Capital Events</span><span>ITE Group</span>
+        <span>DMG Events</span><span>Messe Frankfurt</span><span>DWTC</span><span>ADNEC · Capital Events</span><span>ITE Group</span>
+      </div>
+    </div>
+    <ul class="logos" id="logos" aria-label="Selected event brands"></ul>
+    <p class="fine">Scope of work varies by show and edition.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faqTitle">
+    <div><p class="eyebrow">Before we get started</p><h2 id="faqTitle">A few practical answers.</h2></div>
+    <div>
+      <details open><summary>Can you work with our in-house team or agency?</summary><p>Yes. We can support creative production, content or an agreed part of the campaign.</p></details>
+      <details><summary>Can we start small?</summary><p>Yes. Start with a speaker pack, campaign assets or video adaptations. Scope is agreed before production.</p></details>
+      <details><summary>Our event is close. Can you still help?</summary><p>Share the deadline and the priority assets. We'll confirm what can realistically be delivered.</p></details>
+      <details><summary>Do you support paid campaigns and landing pages?</summary><p>Yes. We discuss them alongside your creative needs, with responsibilities, budget and measurement defined.</p></details>
+    </div>
+  </section>
+
+  <!-- REGISTRATION DESK -->
+  <section class="desk" id="desk" aria-labelledby="deskTitle">
+    <div class="desk-grid">
+      <div>
+        <p class="eyebrow">Registration desk</p>
+        <h2 id="deskTitle">Your event.<br><span class="grad">Our next</span><br>conversation.</h2>
+        <p class="lede">Tell us what's coming up and where extra support would help. We'll help shape a starting scope.</p>
+        <div class="reach"><span>Email</span><a href="mailto:harry@kreativeclan.com">harry@kreativeclan.com</a></div>
+      </div>
+      <div>
+        <form class="reg" id="reg" novalidate>
+          <div class="reg-title"><span>Register your event</span><span>Pass #001</span></div>
+          <div class="two">
+            <label for="f-name">Your name<input id="f-name" name="person" autocomplete="name" required maxlength="120"></label>
+            <label for="f-email">Work email<input id="f-email" name="email" type="email" autocomplete="email" required maxlength="254"></label>
+          </div>
+          <label for="f-event">Event name or website<input id="f-event" name="event" required maxlength="250"></label>
+          <label for="f-help">Where can we help?
+            <select id="f-help" name="help">
+              <option>Creative package for one show</option>
+              <option>Ongoing content and social support</option>
+              <option>Support across a show portfolio</option>
+              <option>Video and onsite coverage</option>
+              <option>Paid campaigns or landing pages</option>
+            </select>
+          </label>
+          <label for="f-time">Timeline and priorities (optional)<textarea id="f-time" name="notes" maxlength="3000"></textarea></label>
+          <label class="hp" for="f-hp">Leave this blank<input id="f-hp" name="company_website" tabindex="-1" autocomplete="off"></label>
+          <button class="pill grad-fill" type="submit">Print my pass ↗</button>
+        </form>
+        <div class="ticket" id="ticket" role="status" aria-live="polite">
+          <div class="reg-title"><span>Pass printed</span><span id="tCode">KFE-001</span></div>
+          <h3 id="tTitle">See you at the show.</h3>
+          <p id="tBody"></p>
+          <div class="row"><a class="pill grad-fill" id="tWa" href="https://wa.me/918281888333">Continue on WhatsApp ↗</a><a class="pill ghost" id="tMail" href="mailto:harry@kreativeclan.com">Email instead</a></div>
+          <p id="tNote" style="margin-top:14px;font-size:12.5px;color:var(--dim)">Your enquiry is saved. Harry will reply on WhatsApp or email.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><span>© 2026 Kreative Clan FZE LLC</span><span>Dubai · Bangalore · Kannur</span><a href="mailto:harry@kreativeclan.com">harry@kreativeclan.com</a></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@b976cba8f08b37e7f3119858a6e89b89f33b8601/site.js"></script>
+</body>
+</html>
