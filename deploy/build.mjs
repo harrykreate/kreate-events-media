@@ -1,7 +1,7 @@
-// Runs on Vercel at build time. Fills in values the page should not carry in source:
-//   CONTACT_EMAIL        the public contact address shown on the page (set in Vercel > Settings > Environment Variables)
+// Runs on Vercel at build time. Copies the site into public/ and fills in values the page should not carry in source:
+//   CONTACT_EMAIL             the public contact address shown on the page (Vercel > Settings > Environment Variables)
 //   GOOGLE_SITE_VERIFICATION  optional: Search Console "HTML tag" code
-import { readFileSync, writeFileSync, rmSync } from 'node:fs';
+import { cpSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const env = process.env;
 const live = env.VERCEL_ENV === 'production';
@@ -21,6 +21,14 @@ html = html.split('%%CONTACT_EMAIL%%').join(email);
 if (html.split('%%GOOGLE_VERIFY%%').length !== 2) { console.error('Build stopped: verification placeholder missing.'); process.exit(1); }
 html = html.replace('%%GOOGLE_VERIFY%%', code ? `<meta name="google-site-verification" content="${code}">\n` : '');
 if (html.includes('%%')) { console.error('Build stopped: an unfilled placeholder is left in the page.'); process.exit(1); }
-writeFileSync('index.html', html);
-rmSync('build.mjs');
-console.log(`Page built for ${env.VERCEL_ENV || 'local'}: contact address set, search verification ${code ? 'set' : 'not set'}.`);
+
+const OUT = 'public';
+const keepOut = new Set([OUT, 'api', 'node_modules', 'build.mjs', 'package.json', 'package-lock.json', 'vercel.json', 'index.html']);
+mkdirSync(OUT, { recursive: true });
+let copied = 0;
+for (const name of readdirSync('.')) {
+  if (keepOut.has(name) || name.startsWith('.')) continue;
+  cpSync(name, `${OUT}/${name}`, { recursive: true }); copied++;
+}
+writeFileSync(`${OUT}/index.html`, html);
+console.log(`Site built for ${env.VERCEL_ENV || 'local'}: ${copied} items copied, contact address set, search verification ${code ? 'set' : 'not set'}.`);
