@@ -383,7 +383,7 @@
     $('#tCode').textContent = 'KFE-' + String(Math.abs([...ev].reduce((a, c) => a * 31 + c.charCodeAt(0), 7)) % 900 + 100);
     const body = `Name: ${name}\nWork email: ${email}\nEvent: ${ev}\nWhere can we help: ${help}\nTimeline and priorities: ${time || '-'}`;
     $('#tWa').href = `https://wa.me/918281888333?text=${encodeURIComponent('Hi Harry, ' + body)}`;
-    $('#tMail').href = `mailto:harry@kreativeclan.com?subject=${encodeURIComponent('Event enquiry: ' + ev)}&body=${encodeURIComponent(body)}`;
+    $('#tMail').href = `${($('#tMail').getAttribute('href') || 'mailto:').split('?')[0]}?subject=${encodeURIComponent('Event enquiry: ' + ev)}&body=${encodeURIComponent(body)}`;
     $('#tNote').textContent = saved ? 'Your enquiry is saved. Harry will reply on WhatsApp or email.' : 'We could not save the form just now. Please send it on WhatsApp or email so it reaches Harry.';
     reg.style.display = 'none'; ticket.classList.add('on');
   });

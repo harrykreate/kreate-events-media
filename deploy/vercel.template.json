@@ -1,0 +1,106 @@
+{
+  "framework": null,
+  "cleanUrls": true,
+  "buildCommand": "node build.mjs",
+  "rewrites": [
+    {
+      "source": "/og-pass.jpg",
+      "destination": "@@CDN@@social/og-pass.jpg"
+    },
+    {
+      "source": "/favicon-96.png",
+      "destination": "@@CDN@@social/favicon-96.png"
+    },
+    {
+      "source": "/favicon-192.png",
+      "destination": "@@CDN@@social/favicon-192.png"
+    },
+    {
+      "source": "/apple-touch-icon.png",
+      "destination": "@@CDN@@social/apple-touch-icon.png"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "@@CDN@@social/favicon-48.png"
+    },
+    {
+      "source": "/kreate-logo.svg",
+      "destination": "https://cdn.jsdelivr.net/gh/harrykreate/kreate-events-media@8665078cabca12e234af9e02521216c325d481b0/img/kreate.svg"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/logos/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(og-pass.jpg|favicon-96.png|favicon-192.png|apple-touch-icon.png|favicon.ico|favicon.svg|kreate-logo.svg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/classic",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/creatives",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://events.kreativeclan.com/creatives>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": ".*\\.vercel\\.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    }
+  ]
+}
