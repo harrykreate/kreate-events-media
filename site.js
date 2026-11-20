@@ -1,6 +1,25 @@
 (() => {
   const $ = s => document.querySelector(s);
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* motion: respect a device's reduce-motion setting by default, but let the visitor choose to play it */
+  const kfe = window.__kfe || (window.__kfe = { errs: [] });
+  const osReduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let motionPref = /[?&]motion=on\b/.test(location.search) ? 'on' : /[?&]motion=off\b/.test(location.search) ? 'off' : null;
+  try { if (motionPref) localStorage.setItem('kfe-motion', motionPref); else motionPref = localStorage.getItem('kfe-motion'); } catch (e) {}
+  const reduce = osReduce && motionPref !== 'on';
+  document.documentElement.classList.toggle('motion-on', !reduce);
+  kfe.motion = reduce ? 'OFF (device asks for reduced motion)' : osReduce ? 'on (visitor chose to play)' : 'on';
+  if (osReduce) {
+    const pill = document.createElement('button');
+    pill.type = 'button'; pill.className = 'motion-pill' + (reduce ? '' : ' is-playing');
+    pill.textContent = reduce ? '\u25B6 Play motion' : '\u275A\u275A Pause motion';
+    pill.setAttribute('aria-label', reduce ? 'Your device is set to reduce motion. Play the animations anyway.' : 'Pause the animations.');
+    pill.addEventListener('click', () => {
+      const next = reduce ? 'on' : 'off';
+      try { localStorage.setItem('kfe-motion', next); } catch (e) {}
+      location.replace(location.pathname + '?motion=' + next);
+    });
+    (document.querySelector('.hero-copy') || document.body).prepend(pill);
+  }
   const small = matchMedia('(max-width: 900px)').matches;
   let heroOn = true; // phones: is the hero on screen (pauses its canvas + pendulum work when it is not)
 
@@ -138,6 +157,7 @@
     if (small && !reduce) phoneBase();
     if (!window.gsap || reduce) return;
     gsap.registerPlugin(ScrollTrigger);
+    kfe.booted = true;
     if (small) phoneMotion();
     let lenis;
     if (window.Lenis && !small) {
