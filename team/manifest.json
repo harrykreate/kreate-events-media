@@ -1,0 +1,229 @@
+{
+ "files": [
+  {
+   "path": "README.md",
+   "bytes": 1020,
+   "sha256": "6f5267f8d5b8304ece0914d833e3e9cdec5407df57d5038eadeb8a8009bc155e"
+  },
+  {
+   "path": "apple-touch-icon.png",
+   "bytes": 14187,
+   "sha256": "29418dfacca5efed56a8119fe6ae9a66c20fe0c1c077fdf71075e8d37d04334e"
+  },
+  {
+   "path": "build.mjs",
+   "bytes": 5594,
+   "sha256": "f7fc99c7d4ef718ea4b2fddd1ea9ebfdf1076a90c1300d7b5d3cbeb1b7815d54"
+  },
+  {
+   "path": "content.js",
+   "bytes": 9358,
+   "sha256": "99a026e10d5030657bdb5e22b7a8e3eb804d16ec609b11ba819bad0b192b4414"
+  },
+  {
+   "path": "favicon-192.png",
+   "bytes": 14191,
+   "sha256": "83149bb3896ae4aea75c9540863a880504ce758d9920bc5ac5b935b1909064b3"
+  },
+  {
+   "path": "favicon-48.png",
+   "bytes": 3128,
+   "sha256": "4afc4c1402059af516d46f39f8b39edf44ad6d90f3e60bd2e5fe15c4b12738fd"
+  },
+  {
+   "path": "favicon-96.png",
+   "bytes": 6562,
+   "sha256": "8195819a516d1860471afa9aceceaa58429a12e85238a637ce11aaf5b735a966"
+  },
+  {
+   "path": "favicon.svg",
+   "bytes": 1117,
+   "sha256": "a5136fe6d9fb396ad7c416f426c4fa26c6113c754eaf8ab3d54ebfa4ea5bcbab"
+  },
+  {
+   "path": "img/brand/kreate.svg",
+   "bytes": 3573,
+   "sha256": "5f166aac64a627a70439776d609c6513f03487740350a04a584e13529ffc8a51"
+  },
+  {
+   "path": "img/people/abin.webp",
+   "bytes": 14350,
+   "sha256": "d52c84971d8c12c037c29451bde9708f77cc7520a8fd129ef0297435f8c357d5"
+  },
+  {
+   "path": "img/people/eric.webp",
+   "bytes": 24958,
+   "sha256": "0ba74a080a1a02aeb383aa29321b67129ff88dd111db5ed1d78815a7819843da"
+  },
+  {
+   "path": "img/people/harry.webp",
+   "bytes": 28570,
+   "sha256": "c7673c383927c7f1f9c82b3f701bb42a51f51d026c38732c3e3bc3a1fe6d8257"
+  },
+  {
+   "path": "img/people/harsha.webp",
+   "bytes": 17926,
+   "sha256": "f88a03a8777c97b2172781915d41ddc204806ceb4d8a4397556bd8445fdde910"
+  },
+  {
+   "path": "img/people/hrishi.webp",
+   "bytes": 24316,
+   "sha256": "1578ff452c1994bf45a47e616ec2cfafa249afc00ae8641ebf6529ccfc8359a3"
+  },
+  {
+   "path": "img/people/lalitha.webp",
+   "bytes": 24886,
+   "sha256": "6809affe7af8fe1c04688ac7b2638eab401e73908e781e3fdb368bc0267801eb"
+  },
+  {
+   "path": "img/people/lamia.webp",
+   "bytes": 19870,
+   "sha256": "196c9f033fbec63df52455eb7afcbcc71e29da29074d3bae1ae23391fa168bfd"
+  },
+  {
+   "path": "img/people/liya.webp",
+   "bytes": 19318,
+   "sha256": "13147b601d6017adcea9d0f1e86f04df3d2bd748e1ce2a121093a47c36b7ed95"
+  },
+  {
+   "path": "img/people/niyas.webp",
+   "bytes": 14128,
+   "sha256": "6ef6b5dcd8a06392d21a4b7b9869a6d158b71668eaa463168a7b17c84cd1ae83"
+  },
+  {
+   "path": "img/people/patrick.webp",
+   "bytes": 14836,
+   "sha256": "21a5724450b03defb576b0013d351a424b226386767accef7044a8d3367af776"
+  },
+  {
+   "path": "img/people/swathi.webp",
+   "bytes": 19528,
+   "sha256": "7dba754ffca7498a755e51285134d1f4c27c976f9ec0a1b5c952d50bcf9a5560"
+  },
+  {
+   "path": "img/people/tharun.webp",
+   "bytes": 20774,
+   "sha256": "ffbbcd617948ed7329ef6ba1fcb9086df210653dcea3b99eb3df4f6e7f832121"
+  },
+  {
+   "path": "img/people/tom.webp",
+   "bytes": 14362,
+   "sha256": "5186fd02bd4e7b5ca9a7d4b7491ef3a2bfce2552e94536e2976613339582f46a"
+  },
+  {
+   "path": "img/years/beanbag-2021.webp",
+   "bytes": 36306,
+   "sha256": "028edeadb7704d6ff328557768b4e28bf91e191bbd5ee76d92b13105bdd5551b"
+  },
+  {
+   "path": "img/years/beginning.webp",
+   "bytes": 25658,
+   "sha256": "1f2076c15740ec1cb16239cd484573146bdc87f1b8264d14c6543caa53245189"
+  },
+  {
+   "path": "img/years/big5-nigeria.webp",
+   "bytes": 55032,
+   "sha256": "6b97ecacf23fce2b371fefe30f2e99ae583440c5ba4cca095e1ae6f14e088482"
+  },
+  {
+   "path": "img/years/desk-2021.webp",
+   "bytes": 29824,
+   "sha256": "cf52b4690be2025b634d97d2f73260115a9998fea6119dc36f493706e2f68f57"
+  },
+  {
+   "path": "img/years/foosball-2021a.webp",
+   "bytes": 56254,
+   "sha256": "560352a01680a5e895cfe88d5993abc43c4638ccd20d2c81c319271d7101e52c"
+  },
+  {
+   "path": "img/years/foosball-2021b.webp",
+   "bytes": 73230,
+   "sha256": "8f66a4c43faec6f5b14d4f4a50dce9446f9a8ca004286a09c6bc87923237c7da"
+  },
+  {
+   "path": "img/years/founders.webp",
+   "bytes": 28120,
+   "sha256": "dd0ff7cde02084af6ab783bfe4b031e06f679b233b97586562b685d0444679dc"
+  },
+  {
+   "path": "img/years/gitex-room.webp",
+   "bytes": 69572,
+   "sha256": "c2f51e70ded78111ba1c0445e901f4445074c9a0ecb746c81d3830843b1856db"
+  },
+  {
+   "path": "img/years/gitex.webp",
+   "bytes": 68432,
+   "sha256": "19a37e3550f90a139355e1a22cff48c5b63d46e8ee689d221df4aef7d8595557"
+  },
+  {
+   "path": "img/years/index-dubai.webp",
+   "bytes": 26872,
+   "sha256": "4658e95c2cc2f10d5a39e54e5a4511d17dfcb290658b810d1c5a0b4b177a6266"
+  },
+  {
+   "path": "img/years/office-nights.webp",
+   "bytes": 68274,
+   "sha256": "d1e3b5fad7c29970f436e3cb621a22935b6851b2cfc858e2c8e3dffa16c52526"
+  },
+  {
+   "path": "img/years/onam.webp",
+   "bytes": 55638,
+   "sha256": "6eb18b4f5073ec7d9fbc711da332c0aa297c42d1f8b63fad0def158858fba28b"
+  },
+  {
+   "path": "img/years/tedx.webp",
+   "bytes": 21312,
+   "sha256": "2f470b652c4dbab922d3389231c00c39b57c2ea7e2ac7a30fc4c0664a239edbb"
+  },
+  {
+   "path": "img/years/the-clan.webp",
+   "bytes": 117438,
+   "sha256": "b28b88fb5926bb54cf9297b5d3c3333e7333bcc122a495fde95bbb18e0d7d931"
+  },
+  {
+   "path": "index.template.html",
+   "bytes": 11314,
+   "sha256": "f0eea55d35e6534b2f110f806e4455714099e5475f5927b3644a128f38d05350"
+  },
+  {
+   "path": "make-manifest.mjs",
+   "bytes": 981,
+   "sha256": "3ec423532dfe2f24d1ec06b93343afa5169dbc971b91d503918ed80f7d5b0223"
+  },
+  {
+   "path": "og-team.jpg",
+   "bytes": 127410,
+   "sha256": "ba2f0c9b3417f51b0705f34097f1ebf61b930fc1bce88aefc03e34b49dee0e46"
+  },
+  {
+   "path": "people.js",
+   "bytes": 4076,
+   "sha256": "b6f43bffecb44ca29c19991248f5ba467c2548a7ba435f8a6fe800b7e8c2a664"
+  },
+  {
+   "path": "site.css",
+   "bytes": 35141,
+   "sha256": "d9b49219c4a73617dccd69be32e512ed8479f25d1481b7c55c40c0808a45c787"
+  },
+  {
+   "path": "site.js",
+   "bytes": 21305,
+   "sha256": "562aa6afbd0528ac9fa0e90c095f0070ccefa1edd41c32006cc8fa146e144c31"
+  },
+  {
+   "path": "video/reel-m.mp4",
+   "bytes": 1327865,
+   "sha256": "4d7d54c2f67751bb4593ef66b9d057c4c7a810d1e06afcd58fb71bd973d0dad0"
+  },
+  {
+   "path": "video/reel.jpg",
+   "bytes": 118860,
+   "sha256": "0137b4ead064671bfb4ac19eedbd1d02e3b766ccd65c3de1a3291fae1c6dc4bd"
+  },
+  {
+   "path": "video/reel.mp4",
+   "bytes": 2717953,
+   "sha256": "ae66301d73d1dac8c33310f101c8cce798004eeccbbeb1b94477b1f46579f960"
+  }
+ ]
+}

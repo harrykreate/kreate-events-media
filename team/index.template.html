@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07060f">
+<title>%%TITLE%%</title>
+<meta name="description" content="%%DESC%%">
+<link rel="canonical" href="%%URL%%">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+%%GOOGLE_VERIFY%%<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kreative Clan">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="%%OG_TITLE%%">
+<meta property="og:description" content="%%OG_DESC%%">
+<meta property="og:url" content="%%URL%%">
+<meta property="og:image" content="%%URL%%og-team.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="%%OG_ALT%%">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="%%OG_TITLE%%">
+<meta name="twitter:description" content="%%OG_DESC%%">
+<meta name="twitter:image" content="%%URL%%og-team.jpg">
+<meta name="twitter:image:alt" content="%%OG_ALT%%">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">%%JSONLD%%</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script>
+(function () {
+  var d = document.documentElement, k = window.__kc = { errs: [] };
+  d.classList.add('js');
+  try { if (localStorage.getItem('kc-team-motion') === 'on') d.classList.add('motion-on'); } catch (e) {}
+  addEventListener('error', function (e) {
+    var t = e.target || {};
+    k.errs.push(e.message ? e.message + ' @ ' + String(e.filename || '').split('/').pop() + ':' + (e.lineno || 0) : 'failed to load ' + String(t.src || t.href || t.tagName || '?').split('/').slice(-2).join('/'));
+  }, true);
+})();
+</script>
+<link rel="stylesheet" href="site.css?v=%%V%%">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- doors open -->
+<div class="doors" aria-hidden="true">
+  <div class="doors-panel"></div><div class="doors-panel two"></div>
+  <div class="doors-inner"><canvas id="doorsLed" width="1120" height="260"></canvas><div class="doors-label" id="doorsLabel">Founded by two</div></div>
+</div>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="Kreative Clan team, back to top"><img src="img/brand/kreate.svg" alt="kreate" width="97" height="30"><span>The Clan</span></a>
+  <nav aria-label="Sections">
+    <a href="#story">Story</a><a href="#roster">Roster</a><a href="#numbers">Numbers</a><a href="#after-hours">After hours</a><a class="cta" href="#clan">Meet the Clan ↓</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- 1. HERO: the moving wall, filled with the team -->
+  <section class="hero" aria-label="Founded by two, grown by the Clan">
+    <div class="hero-stage">
+      <div class="wall" aria-hidden="true" id="wall"></div>
+      <canvas class="beams" id="beams" aria-hidden="true"></canvas>
+      <div class="veil" aria-hidden="true"></div>
+
+      <div class="badge-rig" aria-hidden="true">
+        <div class="strap" id="strap"></div>
+        <div class="badge" id="badge">
+          <div class="badge-clip"></div>
+          <div class="badge-card" id="badgeCard">
+            <div class="badge-hole"></div>
+            <img src="img/brand/kreate.svg" alt="">
+            <div class="badge-kind">Crew pass</div>
+            <div class="badge-name" id="passName">The Clan</div>
+            <div class="badge-role" id="passRole">21 people · Kreative Clan</div>
+            <div class="badge-code"><span id="passCode">Est. 2018</span><i></i></div>
+          </div>
+          <div class="badge-hint">Drag the pass</div>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">The people of Kreative Clan</p>
+        <h1><span>Founded</span><span>by two.</span><span>Grown by</span><span class="grad">the Clan.</span></h1>
+        <p class="lede">Two strangers and one Instagram message in 2018. Today, a team across Kannur, Bengaluru and Dubai.</p>
+        <ul class="facts" aria-label="The Clan in numbers">
+          <li><b>2</b><span>founders</span></li>
+          <li><b data-count="people">21</b><span>people</span></li>
+          <li><b>3</b><span>cities</span></li>
+          <li><b>25</b><span>countries</span></li>
+        </ul>
+        <div class="hero-ctas">
+          <a class="pill grad-fill" href="#clan">Meet the Clan ↓</a>
+          <a class="pill ghost" href="#story">Read the story ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. STORY: the halls -->
+  <section class="halls" id="story" aria-label="The story so far">
+    <div class="halls-stage">
+      <div class="hall-sign">
+        <p class="eyebrow">How we got here</p>
+        <div class="hall-rail" aria-hidden="true"><i id="hallRail"></i></div>
+        <h2>From one message<br><span class="grad">to <span data-count="people-words-lc">twenty-one</span> people.</span></h2>
+      </div>
+      <div class="hall-track" id="hallTrack" data-sig="%%SIG_stands%%">%%HTML_stands%%
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ROSTER: the departures board -->
+  <section class="board-wrap" id="roster" aria-labelledby="boardTitle">
+    <div class="board-head">
+      <div><p class="eyebrow">On the roster</p><h2 id="boardTitle">Who's here.<br><span class="outline">Since when.</span></h2></div>
+      <p>Everyone on the team today, longest-standing first, with their role and the month they joined.</p>
+    </div>
+    <div class="board" role="table" aria-label="The team, longest-standing first">
+      <div class="board-row h" role="row"><span role="columnheader">No</span><span role="columnheader">Name</span><span role="columnheader">Role</span><span role="columnheader">Since</span></div>
+      <div id="boardRows" role="rowgroup" data-sig="%%SIG_board%%">%%HTML_board%%
+      </div>
+    </div>
+    <p class="board-note" id="asOf">Team list as of November 2026.</p>
+  </section>
+
+  <!-- 4. NUMBERS: the LED wall -->
+  <section class="led" id="numbers" aria-label="The Clan in numbers">
+    <div class="led-stage">
+      <canvas id="ledDots" aria-hidden="true"></canvas>
+      <div class="led-copy">
+        <h2 id="ledHeading"><span><b data-count="people">21</b> people.</span><span><b data-count="two-plus">13</b> here 2+ years.</span><span><b data-count="total-years">55</b> years combined.</span></h2>
+        <p>Two people started it. It grew on the trust and loyalty of the people who stayed. <span data-count="longest">Nandu Murali</span> has been here since <span data-count="longest-since">August 2022</span>, longer than anyone but the founders.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. MEET THE CLAN -->
+  <section class="clan" id="clan" aria-labelledby="clanTitle">
+    <p class="eyebrow">Meet the Clan</p>
+    <h2 id="clanTitle">The people<br><span class="outline">behind the work.</span></h2>
+    <div class="chips" id="chips" role="group" aria-label="Filter by team" data-sig="%%SIG_chips%%">%%HTML_chips%%</div>
+    <p class="team-line" id="teamLine" aria-live="polite">Everyone, founders first, then longest-standing first.</p>
+    <div class="founders" id="founders" data-sig="%%SIG_founders%%">%%HTML_founders%%
+    </div>
+    <div class="members" id="members" data-sig="%%SIG_members%%">%%HTML_members%%
+    </div>
+  </section>
+
+  <!-- 6. AFTER HOURS: the reel, then the photo strip -->
+  <section class="stagefloor" id="after-hours" aria-label="After hours">
+    <img class="poster" src="video/reel.jpg" alt="">
+    <video data-src="video/reel.mp4" data-src-m="video/reel-m.mp4" poster="video/reel.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+    <div class="tint" aria-hidden="true"></div>
+    <div class="copy">
+      <h2><small>After hours</small>Not everything<br><span class="outline">is work.</span></h2>
+      <p>Festivals on the terrace, foosball grudges and the odd late night.</p>
+    </div>
+  </section>
+  <section class="strip" aria-label="Photos of the team after hours">
+    <div class="strip-track" id="strip">
+      <figure><img src="img/years/onam.webp" alt="The team dressed for Onam on the office terrace" loading="lazy" width="800" height="1000"><figcaption>Onam on the terrace · 2026</figcaption></figure>
+      <figure><img src="img/years/office-nights.webp" alt="A crowd of teammates at an evening gathering in the office" loading="lazy" width="800" height="1000"><figcaption>Office nights · 2026</figcaption></figure>
+      <figure><img src="img/years/the-clan.webp" alt="The whole team outdoors on a team day" loading="lazy" width="800" height="1000"><figcaption>Team day · 2023</figcaption></figure>
+      <figure><img src="img/years/foosball-2021a.webp" alt="Teammates gathered around the foosball table" loading="lazy" width="800" height="1000"><figcaption>Foosball breaks · 2021</figcaption></figure>
+      <figure><img src="img/years/gitex.webp" alt="A group selfie of the team at GITEX" loading="lazy" width="800" height="1000"><figcaption>GITEX with the team · 2025</figcaption></figure>
+      <figure><img src="img/years/foosball-2021b.webp" alt="A foosball rematch in the office" loading="lazy" width="800" height="1000"><figcaption>The rematch · 2021</figcaption></figure>
+      <figure><img src="img/years/gitex-room.webp" alt="The team working together around a table behind the scenes at GITEX" loading="lazy" width="800" height="1000"><figcaption>Behind the scenes · 2025</figcaption></figure>
+      <figure><img src="img/years/beanbag-2021.webp" alt="A teammate working from a beanbag" loading="lazy" width="800" height="1000"><figcaption>Work, our way · 2021</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 7. CLOSE -->
+  <section class="desk" id="close" aria-labelledby="closeTitle">
+    <p class="eyebrow">Still growing</p>
+    <h2 id="closeTitle">Two planted it.<br><span class="grad" data-count="people-words">Twenty-one</span><br>keep it growing.</h2>
+    <p class="lede">To everyone who stayed, built and believed in it: thank you.</p>
+    <div class="ctas">
+      <a class="pill grad-fill" href="https://events.kreativeclan.com/">See the work ↗</a>
+      <a class="pill ghost" href="#top">Back to the top ↑</a>
+    </div>
+  </section>
+</main>
+
+<footer><span>© %%YEAR%% <a href="https://www.kreativeclan.com/">Kreative Clan</a></span><span>Kannur · Bengaluru · Dubai</span><span><a href="https://events.kreativeclan.com/">Kreate for Events ↗</a></span></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="people.js?v=%%V%%"></script>
+<script src="content.js?v=%%V%%"></script>
+<script src="site.js?v=%%V%%"></script>
+</body>
+</html>
